@@ -14,3 +14,16 @@ function nameShuffle (str) {
     return (a[1].concat(" ").concat(a[0])) ;
 }
 
+// generates that many dashes as the passed number
+function numberToDashes(num) {
+	  var l_c ;
+    var str = '';
+
+    for (l_c = 0; l_c < num; l_c ++) {
+        str = str.concat("-") ;
+    }
+
+    return(str) ;
+}
+
+
