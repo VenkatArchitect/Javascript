@@ -21,3 +21,26 @@ function removeOddsFromArray (arr) {
     return(arr.filter(arr => !(arr % 2))) ;
 }
 
+// find missing angle's property of a triangle
+function missingAngleProperty (a1, a2) {
+    
+    var l_ta ;
+
+    if ((a1 < 0) || (a2 < 0)) {
+        return ("Invalid angle specification") ;
+    }
+    else
+    {
+        l_ta = (180 - (a1 + a2)) ;
+
+        if (l_ta == 90) {
+            return ('right') ;
+        }
+        else if (l_ta < 90) {
+            return ('acute') ;
+        }
+        else {
+            return ('obtuse') ;
+        }
+    }
+}
