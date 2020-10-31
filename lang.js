@@ -7,3 +7,10 @@ function js_removeVowels(str) {
 function js_countWords(str) {
     return(str.split(/[^\s]+/).length - 1) ;	
 }
+
+// shuffles first and last names
+function nameShuffle (str) {
+    a = str.split (" ") ;
+    return (a[1].concat(" ").concat(a[0])) ;
+}
+
