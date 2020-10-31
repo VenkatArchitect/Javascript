@@ -26,4 +26,22 @@ function numberToDashes(num) {
     return(str) ;
 }
 
+// reverses a string
+function reverseString (str) {
+
+    var l_c ;
+    var l_sl = str.length ;
+    var l_rs = '' ;
+
+    if (l_sl === 0) {
+        return ('') ;
+    }
+    else {
+        for (l_c = (l_sl - 1); l_c >= 0; l_c --) {
+            l_rs = l_rs.concat(str[l_c]) ;
+        }
+    }
+
+    return (l_rs) ;
+}
 
